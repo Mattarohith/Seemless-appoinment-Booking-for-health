@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seamless Appointment Booking</title>
+  <link rel="stylesheet" href="Project.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Appointment</h1>
+    <form id="bookingForm">
+      <input type="text" id="patientName" placeholder="Patient Name" required>
+      <select id="doctorSelect" required>
+        <option value="">Select Doctor</option>
+        <option value="101">Dr. Sharma - Cardiologist</option>
+        <option value="102">Dr. Patel - Dermatologist</option>
+      </select>
+      <input type="date" id="appointmentDate" required>
+      <input type="time" id="appointmentTime" required>
+      <textarea id="reason" placeholder="Reason for Visit" rows="3"></textarea>
+      <button type="submit">Book Appointment</button>
+    </form>
+    <div id="confirmation" class="hidden"></div>
+  </div>
+  <script src="Project.js"></script>
+</body>
+</html>
