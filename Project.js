@@ -10,7 +10,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
   const confirmation = document.getElementById("confirmation");
 
   confirmation.innerHTML = `
-    ✅ Appointment booked successfully!<br>
+     Appointment booked successfully!<br>
     Patient: ${name}<br>
     Doctor ID: ${doctor}<br>
     Date: ${date}<br>
@@ -19,6 +19,5 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
   `;
   confirmation.classList.remove("hidden");
 
-  // Reset form
   document.getElementById("bookingForm").reset();
 });
